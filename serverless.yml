@@ -1,0 +1,13 @@
+service: serverless-employee-management
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http:
+          path: employees
+          method: get
