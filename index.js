@@ -3,11 +3,11 @@ const app = express();
 
 app.use(express.json());
 
-// 示例路由
+// Example route
 app.get('/employees', (req, res) => {
-  res.send('获取员工信息');
+  res.send('Fetching employee information');
 });
 
 app.listen(3000, () => {
-  console.log('服务运行在 http://localhost:3000');
+  console.log('Server running at http://localhost:3000');
 });
